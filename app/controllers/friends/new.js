@@ -11,9 +11,6 @@ export default FriendsBaseController.extend({
 });
 
 
-
-
-
 // Abstracted away when inheriting from friends/base
 // import Ember from 'ember';
 
