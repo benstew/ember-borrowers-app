@@ -7,6 +7,25 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  // included picnic for styling
+  app.import('bower_components/picnic/releases/plugins.min.css'); 
+  app.import('bower_components/picnic/releases/picnic.min.css');
+
+
+  // Including fontello for fonts. this is an external library
+  // the destDir tells ember that we want to put those files under a directory called font
+  app.import('vendor/fontello/fontello.css'); 
+  app.import('vendor/fontello/font/fontello.ttf', {
+    destDir: 'font'
+  });
+  app.import('vendor/fontello/font/fontello.eot', { 
+    destDir: 'font'
+  }); app.import('vendor/fontello/font/fontello.svg', {
+    destDir: 'font'
+  });
+  app.import('vendor/fontello/font/fontello.woff', { 
+    destDir: 'font'
+  });
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
