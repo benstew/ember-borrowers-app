@@ -3,9 +3,9 @@
 <h2>Total friends: {{model.length}}</h2>
 
 {{#each model as |friend|}}
-  <li>
-      {{#link-to friend.fullName 'friends.show' friend}}
-        {{friend.firstName}} {{friend.lastName}}
-      {{/link-to}}
-  </li>
+<li>
+    {{#link-to 'friends.show' friend}}
+      {{friend.firstName}} {{friend.lastName}}
+    {{/link-to}}
+</li>
 {{/each}}
